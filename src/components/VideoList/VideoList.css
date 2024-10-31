@@ -1,0 +1,41 @@
+.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.item {
+  border-radius: 15px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 2px 2px 5px rgba(59, 235, 191, 0.5);
+}
+
+.items .item:hover {
+  box-shadow: 3px 3px 10px rgba(59, 235, 191, 0.9);
+}
+
+.img {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.img a {
+  text-decoration: underline;
+}
+.img a:hover {
+  text-decoration: none;
+  color: rgba(255, 99, 71, 0.6);
+}

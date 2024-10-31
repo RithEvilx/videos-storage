@@ -1,0 +1,63 @@
+nav {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  padding: 0 80px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.active,
+.dropdown-menu a.active {
+  color: tomato;
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none; /* Hide the dropdown by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Show the dropdown on hover */
+}
+
+.dropdown-menu li {
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Show ellipsis if text is too long */
+  white-space: nowrap; /* Prevent text from wrapping */
+  width: 150px; /* Set a fixed width for the dropdown items */
+}
+
+.dropdown-menu li a:hover {
+  background-color: #e9ecef;
+}

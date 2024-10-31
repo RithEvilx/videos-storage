@@ -1,0 +1,27 @@
+form {
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(4, 4, 4, 0.5);
+}
+
+form div {
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+div input,
+div textarea,
+div select {
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 7px;
+  background-color: rgb(73, 73, 73);
+  color: white;
+}
